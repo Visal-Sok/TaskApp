@@ -1,0 +1,312 @@
+:root {
+    --background-base : #4f77b3;
+    --background-app : #051a4158;
+    --background-hover : rgba(31, 18, 117, 0.364);
+}
+.main {
+    border-radius: 7px 0 7px 0;
+}
+.container {
+    background-color: var(--background-base);
+    min-height: 576px;
+    width: 576px;
+    margin: 0 auto;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 1.3fr 2fr;
+    position: relative;
+}
+.nav-left {
+    padding: 3px;
+}
+.nav-left .account-info {
+    padding : 0.65rem;
+    font-size: 0.65rem;
+    line-height: 0.5;
+    display: flex;
+}
+.nav-left .account-info img {
+    width :55px;
+    height: 55px;
+    border-radius: 50%;
+    padding-right: 7px;
+}
+.nav-left .search {
+padding: 0.7rem;
+padding-right: 1.2rem;
+padding-left: 8px;
+padding-top: 0%;
+}
+.nav-left .search input[type="text"] {
+    width: 100%;
+    border-radius: 4px;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    border-bottom: beige 2px solid;
+    opacity: 70%;
+    color: white;
+}
+::placeholder{
+    color: antiquewhite;
+}
+.nav-left .categories ul {
+    list-style: none;
+    padding: 0px;
+    padding-left: 0px;
+    margin: 0px;
+    margin-right: 8px;
+    font-family: Roboto;
+    font-size: 0.75rem;
+}
+.nav-left .categories ul li input[type="text"] {
+    width: 70%;
+    margin-right: 15px;
+    background-color: inherit;
+    outline: none;
+    border-bottom: beige 2px solid;
+    color: white;
+    border: 0px solid;
+    height: 18px;
+    border-radius: 4px;
+}
+.nav-left .categories ul li {
+    padding: 7px 0;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    transition: opacity, color 0.5s;
+    font-size: 0.8rem;
+    opacity: 100%;
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+    align-items: center;
+}
+.iconname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconnamemini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12px;
+}
+.noti {
+    background-color: var(--background-hover);
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    line-height: 25px;
+}
+.notimini {
+    background-color: var(--background-hover);
+    height: 18px;
+    width: 18px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    line-height: 19px;
+    font-size: 0.7rem;
+}
+.nav-left .categories ul li:hover{
+    background-color: var(--background-app);
+    cursor: pointer;
+    border-radius: 7px;
+    opacity: 80%;
+    color: white;
+}
+.nav-left .categories ul li:active {
+    opacity: 60%;
+}
+.nav-left .categories ul li span{
+    margin: 0 20px 0 0px;
+}
+/* .nav-left .categories ul li span.material-symbols-outlined{
+    float: left;
+} */
+.nav-left .categories ul li p {
+    text-align: right;
+}
+/* .nav-left .categories ul li span.backnot {
+    float: right;
+} */
+/* .nav-left .categories ul li .mini-task {
+    margin-left: 20px;
+} */
+/* .nav-left .search input[type="text"] {
+width
+} */
+.nav-left .account-info .info h2 {
+font-size: 1.5 rem;
+}
+.nav-left .account-info .info p {
+    font-size: 1.1 rem;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.main {
+background-color: var(--background-app);
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color :white
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 20
+}
+.nav-left .add-categories {
+    position: absolute;
+    bottom: 0;
+    
+}
+.nav-left .add-categories button {
+    padding: 7px 46.7px;
+    border-radius: 4px;
+    border: 0px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-hover);
+    color: beige;
+    cursor: pointer;
+    transition: opacity 0.25s;
+}
+.nav-left .add-categories button:hover{
+    opacity: 80%;
+}
+.nav-left .add-categories button:active{
+    opacity: 60%;
+}
+.main .wrapper {
+    padding: 25px;
+    font-weight: 600px;
+
+}
+.main .wrapper .task-title {
+display: flex;
+align-items: center;
+/* position: relative; */
+justify-content: space-between;
+}
+
+.main .wrapper .task-title .title {
+    align-items: center;
+    display: flex;margin-top: 5px;
+}
+.main .wrapper .tasks-list {
+    margin-top: 35px;
+    height: 400px;
+}
+.main .wrapper .tasks-list ul {
+    list-style: none;
+    padding: 0px;
+    padding-left: 0px;
+    margin: 0px;
+    margin-right: 8px;
+    font-family: Roboto;
+    font-size: 0.75rem;
+}
+.main .wrapper .tasks-list ul li {
+    margin-top: 10px;
+    width: 97%;
+    background-color: var(--background-app);
+    opacity: 80%;
+    padding: 10px 10px;
+    margin-bottom: 2px;
+    margin-top: 0px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 30px;
+}
+#addnew {
+    margin-top: 10px;
+    width: 97%;
+    background-color: var(--background-app);
+    opacity: 80%;
+    padding: 10px 10px;
+    margin-bottom: 2px;
+    margin-top: 0px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 30px;
+}
+form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .wrapper .tasks-list ul li .desc{
+    width: 85%;
+    position: absolute;
+    bottom: 0;
+    padding-left: 20px;
+    padding-bottom: 8px;
+}.main .wrapper .tasks-list ul li .taskname {
+    width: 90%;
+    display: flex;
+    top: 0;
+    padding-bottom: 12px;
+}
+.main .wrapper .tasks-list ul li label.Maintask {
+    width: 100%;
+}
+.main .wrapper .tasks-list ul li div span.taskside-a {
+    font-size: 9px;
+    float: left;
+}
+.main .wrapper .tasks-list ul li div span.taskside-b {
+    font-size: 9px;
+    float: right;
+}
+#addnew {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    border-radius: 7px;
+    transition: opacity 0.35s;
+    cursor: pointer;
+}
+#addnew:hover{
+    opacity: 80%;
+}
+#addnew:active{
+    opacity:60%;
+}
+#div1 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#divsym {
+    float: right;
+}
+#addnew input[type="text"] {
+    background-color: transparent;
+    color: white;
+    border: 0px;
+    outline: none;
+    width: 70%
+}

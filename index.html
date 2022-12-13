@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="style1.css" rel="stylesheet">
+    <link href="effect.css" rel="stylesheet">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+
+    </head>
+    <body>
+        <br><br>
+        <div class="container effect7">
+            <div class="nav-left">
+                <!-- account info -->
+                <div class="account-info">
+                <img src="pixel-jeff-clipa-s.gif">
+                    <div class="info">
+                        <h2>Visal SOK</h2>
+                        <p>sokvisal02@gmail.com
+                            <span class="material-symbols-outlined">
+                                arrow_drop_down
+                            </span>
+                        </p>
+                        
+                    </div>
+                </div>
+                <!-- search text box -->
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="categories">
+                    <ul>
+                        <li onclick="filter_task('All')">
+                            <div class ="iconname">
+                            <span class="material-symbols-outlined">dataset</span>
+                                All Task
+                            </div><span class="noti">6</span></li>
+                        <!-- <li class="mini-tasks" onclick="filter_task('Chores')">
+                            <div class ="iconnamemini">
+                                <span class="material-symbols-outlined">check</span>
+                                <span class="mt">
+                                Chores &nbsp;
+                            </div>
+                            </span>
+                            <span class="notimini">
+                                2
+                            </span>
+                        </li> -->
+                        <li class="mini-tasks" onclick="filter_task('Health')">
+                            <div class ="iconnamemini">
+                                <span class="material-symbols-outlined">check</span>
+                                <span class="mt">
+                                Health &nbsp;
+                            </div>
+                            </span>
+                            <span class="notimini">
+                                2
+                            </span>
+                        </li>
+                        <li class="mini-tasks" onclick="filter_task('Entertainment')">
+                            <div class ="iconnamemini">
+                                <span class="material-symbols-outlined">check</span>
+                                <span class="mt">
+                                    Entertainment &nbsp;
+                                </span>
+                            </div>
+                            <span class="notimini">
+                                1
+                            </span></li>
+                        <li class="mini-tasks" onclick="filter_task('School')">
+                            <div class ="iconnamemini">
+                                <span class="material-symbols-outlined">check</span>
+                                <span class="mt">
+                                    School &nbsp;
+                                </span>
+                            </div>
+                            <span class="notimini">
+                                1
+                            </span></li>
+                    </ul>
+                </div>
+                <div class="add-categories">
+                    <button><span class="material-symbols-outlined">add_circle</span> &nbsp;&nbsp;Add Categories</button>
+                </div>
+            </div>
+
+            <!-- Main Side -->
+            <!-- Main Side -->
+            
+            <div class="main">
+                <div class="wrapper">
+                    <div class="task-title">
+                        <div class="title">
+                            <span class="material-symbols-outlined">apps</span>
+                            <span>&nbsp;&nbsp;All Task</span>
+                        </div>
+                        <div class="divsym"><span class="material-symbols-outlined" id="more">more_horiz</span></div>
+                    </div>
+                    <!-- Task List -->
+                    <div class="tasks-list">
+                        <ul>
+                            <!-- <li>
+                                <input type="checkbox"/>&nbsp;&nbsp;<label class = "Maintask">Go for a walk
+                                <div class="desc" >
+                                    <span class = "taskside-a">Run 3 miles in 15 minutes</span>
+                                    <span class = "taskside-b">Today, 11:05AM</span>
+                                </div>
+                            </li> -->
+                            <!-- <li>
+                                <div class="taskname">
+                                    <input type="checkbox"/>&nbsp;&nbsp;<label class = "Maintask">Go for a walk</label>
+                                </div>
+                                <div class="desc" >
+                                    <span class = "taskside-a">Run 3 miles in 15 minutes</span>
+                                    <span class = "taskside-b">Today, 11:05AM</span>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div id = "addnew">
+                        <span class="material-symbols-outlined">
+                            add_circle</span>
+                        <!-- &nbsp;&nbsp; -->
+                        <a>Add New</a>
+                        <!-- <form>
+                            <input type = "checkbox"/>
+                            <input type = "text" name = "newtask">
+                        </form> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src= "app.js" rel= "script"></script>
+    </body>
+</html>

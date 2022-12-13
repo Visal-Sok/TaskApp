@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Learn HTML",
+        "categories": "School",
+        "create_at": "Today, 2:45PM"
+    }
+,   {
+        "name": "Make tea",
+        "categories": "Health",
+        "create_at": "Today, 2:47PM"
+    }
+,
+    {
+        "name": "Watch TV",
+        "categories": "Entertainment",
+        "create_at": "Today, 3:28PM"
+    }
+,
+    {
+        "name": "Do Chores",
+        "categories": "Home",
+        "create_at": "Today, 4:45PM"
+    }
+,
+    {
+         "name": "Take Medicine",
+        "categories": "Health",
+        "create_at": "Today, 4:57PM"
+    }
+,
+    {
+         "name": "Gaming",
+        "categories": "Gaming",
+        "create_at": "Today, 6:17PM"
+    }
+]

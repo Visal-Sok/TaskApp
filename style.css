@@ -1,0 +1,39 @@
+*{
+  text-align: center;
+}
+.header, .footer{
+  background-color: cadetblue;
+}
+.menu{
+  background-color: blue;
+}
+.ads-A{
+  background-color: mediumpurple;
+  display: none;
+}
+.ads-A2{
+  background-color: cyan;
+}
+.main{
+  background-color: orange;
+  min-height:300px;
+}
+.ads-B{
+  background-color: aquamarine;
+}
+@media screen and (min-width: 992px){
+  .ads-A, .ads-B{
+    min-height: 150px;
+  }
+  .ads-A{
+    display: block;
+  }
+  .ads-A2{
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px){
+  .menu{
+    min-height: 300px;
+  }
+}
